@@ -5,23 +5,27 @@ const getDate = dateString => new Date(`${dateString} 00:00:00`);
 
 describe("rwa-holidays", () => {
   describe("gets observed holidays", () => {
-    it("should return false", () => {
+    it("2010-12-31 should return false", () => {
       const date = getDate("2010-12-31");
       expect(isAHoliday(date)).to.be.false;
     });
-    it("should return true", () => {
-      const date = getDate("2010-12-25");
+    it("2010-12-24 should return true", () => {
+      const date = getDate("2010-12-24");
       expect(isAHoliday(date)).to.be.true;
     });
-    it("should return true", () => {
+    it("2010-12-25 should return false", () => {
+      const date = getDate("2010-12-25");
+      expect(isAHoliday(date)).to.be.false;
+    });
+    it("2010-01-01 should return true", () => {
       const date = getDate("2010-01-01");
       expect(isAHoliday(date)).to.be.true;
     });
-    it("should return true", () => {
+    it("2010-07-01 should return true", () => {
       const date = getDate("2010-07-01");
       expect(isAHoliday(date)).to.be.true;
     });
-    it("should return false", () => {
+    it("1990-04-07 should return false", () => {
       const date = getDate("1990-04-07");
       expect(isAHoliday(date)).to.be.false;
     });

@@ -97,6 +97,32 @@ const getHolidays = (year = new Date().getFullYear()) => {
   });
 
   holidays.forEach(holiday => {
+    const day = holiday.date.getUTCDay();
+
+    if (day === 0) {
+      // Actual holiday falls on Sunday. Shift the observed date forward to
+      // Monday.
+      holiday.date = new Date(
+        Date.UTC(
+          holiday.date.getUTCFullYear(),
+          holiday.date.getUTCMonth(),
+          holiday.date.getUTCDate() + 1
+        )
+      );
+    } else if (day === 6) {
+      // Actual holiday falls on Saturday. Shift the observed date backward
+      // to Friday.
+      holiday.date = new Date(
+        Date.UTC(
+          holiday.date.getUTCFullYear(),
+          holiday.date.getUTCMonth(),
+          holiday.date.getUTCDate() - 1
+        )
+      );
+    }
+  });
+
+  holidays.forEach(holiday => {
     holiday.dateString = `${holiday.date.getUTCFullYear()}-${holiday.date.getUTCMonth() +
       1}-${holiday.date.getUTCDate()}`;
   });
