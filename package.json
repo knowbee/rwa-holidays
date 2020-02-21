@@ -1,6 +1,7 @@
 {
   "name": "rwa-holidays",
   "version": "1.0.1",
+  "description": "NPM package for getting Rwanda holidays for a given year or determine if current date is a holiday",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
