@@ -4,3 +4,4 @@ test/
 .eslintrc
 .eslintignore
 .travis.yml
+.nyc_output
