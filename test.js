@@ -1,9 +1,3 @@
-const fedHolidays = require('./index.js');
+const { isAHoliday, getHolidays } = require("./index");
 
-const options = {
-  shiftSaturdayHolidays: true,
-  shiftSundayHolidays: true
-};
-const holidays = fedHolidays.allForYear(2020, options);
-
-console.log(holidays)
+console.log(isAHoliday("2010-12-31"));
