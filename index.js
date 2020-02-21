@@ -132,8 +132,6 @@ const getHolidays = (year = new Date().getFullYear()) => {
 
 const isAHoliday = (date = new Date() || date, { utc = false } = {}) => {
   const year = utc ? date.getUTCFullYear() : date.getFullYear();
-  // Get the holidays this year, plus check if New Year's Day of next year is
-  // observed on December 31 and if so, add it to this year's list.
   const allForYear = getHolidays(year);
   const nextYear = getHolidays(year + 1);
   if (nextYear[0].date.getUTCFullYear() === year) {
