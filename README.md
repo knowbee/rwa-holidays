@@ -80,11 +80,6 @@ const holidays = getHolidays(2020);
     dateString: '2020-12-25'
   },
   {
-    name: 'Veterans Day',
-    date: 2020-11-11T00:00:00.000Z,
-    dateString: '2020-11-11'
-  },
-  {
     name: 'Umuganura Day',
     date: 2020-08-07T00:00:00.000Z,
     dateString: '2020-8-7'

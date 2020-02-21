@@ -84,11 +84,6 @@ const getHolidays = (year = new Date().getFullYear()) => {
     name: `Boxing Day`,
     date: new Date(Date.parse(`12/26/${year} GMT`))
   });
-  // Veterans Day
-  holidays.push({
-    name: `Veterans Day`,
-    date: new Date(Date.parse(`11/11/${year} GMT`))
-  });
 
   // Friday of first week of August: Umuganura Day
   holidays.push({
