@@ -1,6 +1,7 @@
 # rwa-holidays
 
 [![Build Status](https://travis-ci.org/knowbee/rwa-holidays.svg?branch=master)](https://travis-ci.org/knowbee/rwa-holidays)
+[![Npm Weekly Downloads](https://badgen.net/npm/dw/rwa-holidays)](https://badgen.net/npm/dw/rwa-holidays)
 [![npm](https://img.shields.io/npm/v/rwa-holidays.svg)](https://www.npmjs.com/package/rwa-holidays)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
